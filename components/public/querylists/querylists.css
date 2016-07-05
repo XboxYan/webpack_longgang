@@ -1,0 +1,15 @@
+/* result_lists */
+.result_lists{ padding-top:70px;}
+.result_title{ font-size:24px; color:#333; height:46px; line-height:46px; border-bottom:1px solid #7d9fe4;}
+.result_item{ padding:20px 0; border-bottom:1px dashed #e1e1e1;}
+.result_item_wrap dt{ float:left; width:120px; padding-right:30px; padding-top:13px;}
+.result_item_wrap dt img{ vertical-align:top; width:100%;}
+.result_item_wrap dd{ overflow:hidden;}
+.result_item h2{ height:20px;font-size:14px; color:#7d9fe4;}
+.result_item h2 img{ vertical-align:middle; margin-right:5px;}
+.result_item h2 span{ line-height:20px; vertical-align:middle}
+.result_item h3{ line-height:40px; color:#373e72; font-size:20px; text-align:left; padding-bottom:10px;}
+.result_item h3 a{ color:#373e72;}
+.result_item h3 a:hover{ color:#6c75b4;transition:0.3s;}
+.result_item h4{ font-size:14px; color:#999; line-height:34px;}
+.result_item p{ font-size:16px; color:#666; line-height:28px;}

@@ -1,0 +1,11 @@
+/* footer */
+#footer{ background:#212342; padding:30px 0; position:relative; z-index:1;}
+.copy_right{ padding:0 50px;}
+.footer_list{ float:left; width:235px;}
+.footer_list dt{ font-size:14px; padding-bottom:22px; color:#bbc0ff}
+.footer_list dd{ line-height:28px; font-size:12px;}
+.footer_list dd a{ color:#505aa6}
+.about{ float:right;}
+.about img{ display:block; padding:10px 0 20px 0;}
+.about p{ line-height:28px; color:#505aa6; font-size:12px;}
+.about p a{ color:#505aa6; margin:0 7px;}

@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>龙岗区政务数据资源网</title>
+<link href="css/main.css" type="text/css" rel="stylesheet">
+<script src="js/avalon.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script>
+$(function(){
+	function request(method, param, p1, p2, p3, p4)
+{
+	return [
+		{time:'2015-05-20  14:04',status:'审核中',inf:'您的调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，案件查收！'},
+		{time:'2015-05-19  14:04',status:'审核中',inf:'您的调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，案件查收！'},
+		{time:'2015-05-19  14:04',status:'审核中',inf:'您的调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，案件查收！'},
+		{time:'2015-05-19  14:04',status:'审核中',inf:'您的调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，案件查收！'},
+		{time:'2015-05-19  14:04',status:'审核中',inf:'您的调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，调处申请已经处理结束，案件查收！'}
+	]
+}
+	var result = request('method', 'param', 'p1', 'p2', 'p3', 'p4');
+	if (result) {
+		
+//avalon方法		
+		avalon.ready(function(){
+			var vm = avalon.define({
+				$id: "wrap",
+				arr: [],
+				m:"",
+				})
+		
+			 avalon.scan();
+		});
+		
+
+//			  
+	}
+})
+
+</script>
+</head>
+
+<body>
+	<div id="header">
+		<div class="layoutMid clear">
+			<h1 class="logo fl">龙岗区政务数据资源网<a href="#"><img src="img/logo.png"></a></h1>
+			<div class="nav fr">
+				<a class="nav_item on" href="#">首页</a>
+				<a class="nav_item" href="#">资源目录</a>
+				<a class="nav_item" href="#">APP应用</a>
+				<a class="nav_item" href="#">开发API</a>
+				<a class="login" href="#">登录</a>
+				<a class="regesiter" href="#">注册</a>
+			</div>
+		</div>
+	</div>
+	<div class="search search_sfixed z2">
+		<div class="layoutMid">
+			<h3>&nbsp;</h3>
+			<h4>&nbsp;</h4>
+			<div class="search_part">
+				<input type="text" placeholder="例如：空气质量">
+				<a href="#"></a>
+			</div>
+		</div>
+	</div>
+	<div class="search_list bf" ms-controller='wrap'>
+		<div class="layoutMid">
+			<dl class="result_list clear">
+				<dt>新闻列表  ></dt>
+				<dd class="result_sel" ms-repeat=arr ms-if=arr.length><span>{{el}}</span><a ms-click=$remove href="javascript:;"></a></dd>
+			</dl>
+			<div class="result_box">
+				<p class="result_sort" style="border:0">
+					<span>资源分类：</span>
+					<a class="all on" href="javascript:;">全部分类</a>
+					<a href="javascript:;">教育培训</a>
+					<a href="javascript:;">金融消费</a>
+					<a href="javascript:;">能源开发</a>
+					<a href="javascript:;">科学研究</a>
+					<a href="javascript:;">水陆气候</a>
+					<a href="javascript:;">医疗健康</a>
+					<a href="javascript:;">农林生态</a>
+					<a href="javascript:;">工业制造</a>
+					<a href="javascript:;">公共安全</a>
+					<a href="javascript:;">道路交通</a>
+					<i class="r_more">更多</i>
+				</p>
+				<p class="result_sort">
+					<span>资源格式：</span>
+					<a class="all on"  href="javascript:;">全部格式</a>
+					<a href="javascript:;">CSV</a>
+					<a href="javascript:;">JSON</a>
+					<a href="javascript:;">XLS</a>
+				</p>
+				<p class="result_sort">
+					<span>操作系统：</span>
+					<a class="all on"  href="javascript:;">全部</a>
+					<a href="javascript:;">iOS</a>
+					<a href="javascript:;">Android</a>
+					<a href="javascript:;">Windows Phone</a>
+					<a href="javascript:;">其他</a>
+				</p>
+				<p class="result_sort">
+					<span>发布单位：</span>
+					<a class="all on"  href="javascript:;">全部单位</a>
+					<a href="javascript:;">发展和改革局</a>
+					<a href="javascript:;">教育局</a>
+					<a href="javascript:;">住房和建设局</a>
+					<a href="javascript:;">民政局</a>
+					<a href="javascript:;">卫生和计划生育局</a>
+					<a href="javascript:;">安全生产监督管理局</a>
+					<a href="javascript:;">水务局</a>
+					<a href="javascript:;">经济促进局</a>
+					<a href="javascript:;">经济促进局</a>
+					<a href="javascript:;">城市管理局</a>
+					<a href="javascript:;">城市更新办</a>
+					<a href="javascript:;">应急管理办公室</a>
+					<i class="r_more">更多</i>
+				</p>
+			</div>
+			<div class="result_lists">
+				<h3 class="result_title">为您提供1028条信息</h3>
+				<ul>
+					<li class="result_item">
+						<h2><img src="img/dot01.png"><span>教育培训</span></h2>
+						<dl class="result_item_wrap">
+							<dd>
+								<h3><a href="#">2015年度龙岗区高校毕业生创业资助拟资助项目名单</a></h3>
+								<h4>2015-06-03</h4>
+								<p>为加大政府对高校毕业生创业扶持力度，营造生态创业就业环境，龙岗区政府经过监督评审，对信息完善、符合资助管理条例的相关毕业生，进行一定的创业补助，现将拟资助名单作如下公示，欢迎广大网民予以监督。为加大政府对高校毕业生创业扶持力度，营造生态创业就业环境，龙岗区政府经过监督评审，对信息完善、符合资助管理条例的相关毕业生，进行一定的创业补助，现将拟资助名单作如下公示，欢迎广大网民予以监督。</p>
+							</dd>
+						</dl>
+					</li>
+					<li class="result_item">
+						<h2><img src="img/dot01.png"><span>教育培训</span></h2>
+						<dl class="result_item_wrap">
+							<dd>
+								<h3><a href="#">2015年度龙岗区高校毕业生创业资助拟资助项目名单</a></h3>
+								<h4>2015-06-03</h4>
+								<p>为加大政府对高校毕业生创业扶持力度，营造生态创业就业环境，龙岗区政府经过监督评审，对信息完善、符合资助管理条例的相关毕业生，进行一定的创业补助，现将拟资助名单作如下公示，欢迎广大网民予以监督。为加大政府对高校毕业生创业扶持力度，营造生态创业就业环境，龙岗区政府经过监督评审，对信息完善、符合资助管理条例的相关毕业生，进行一定的创业补助，现将拟资助名单作如下公示，欢迎广大网民予以监督。</p>
+								<div class="btn_wrap"><a class="btn01" href="#"><img src="img/btnico01.png"><span>附件下载</span></a></div>
+							</dd>
+						</dl>
+					</li>
+					<li class="result_item">
+						<h2><img src="img/dot10.png"><span>道路交通</span></h2>
+						<dl class="result_item_wrap">
+							<dt><img src="img/app01.png"></dt>
+							<dd>
+								<h3><a href="#">2015新驾考宝典</a></h3>
+								<h4>2015-06-03</h4>
+								<p>2015新驾考宝典采用2015年最新题库，小车类考试科目一共1073题，科目四共900题。本应用同时具备客车、货车驾照考试题库。适用于A1、A2、B1、B2、C1、C2、C3各类驾照考试。四个车轮考驾照，攻关驾校一点通</p>
+								<div class="btn_wrap"><a class="btn01" href="#"><span>Windows Phone版下载</span></a></div>
+							</dd>
+						</dl>
+					</li>
+					<li class="result_item">
+						<h2><img src="img/dot01.png"><span>教育培训</span></h2>
+						<dl class="result_item_wrap">
+							<dt><img src="img/app02.png"></dt>
+							<dd>
+								<h3><a href="#">E上学</a></h3>
+								<h4>2015-06-03</h4>
+								<p>ESchool收录了最新一年部分小学与中学的入学关系，并且将该学区内的学区房的名称与价格对应展示。该应用根据用户的需求与自身条件，智能的筛选匹配用户的入学购房需求，极大解决了家长的择校困惑。</p>
+								<div class="btn_wrap"><a class="btn01" href="#"><span>iOS版下载</span></a></div>
+							</dd>
+						</dl>
+					</li>
+					<li class="result_item">
+						<h2><img src="img/dot01.png"><span>教育培训</span></h2>
+						<dl class="result_item_wrap">
+							<dd>
+								<h3><a href="#">2015年度龙岗区高校毕业生创业资助拟资助项目名单</a></h3>
+								<h4>2015-06-03</h4>
+								<div class="btn_wrap"><a class="btn01" href="#"><img src="img/btnico02.png"><span>XLS下载</span></a><a class="btn01" href="#"><img src="img/btnico03.png"><span>JSON下载</span></a></div>
+							</dd>
+						</dl>
+					</li>
+					<li class="result_item">
+						<h2><img src="img/dot01.png"><span>教育培训</span></h2>
+						<dl class="result_item_wrap">
+							<dd>
+								<h3><a href="#">2015年度各级各类医院收费监督管理办法</a></h3>
+								<h4>2015-06-03</h4>
+								<div class="btn_wrap"><a class="btn01" href="#"><img src="img/btnico02.png"><span>XLS下载</span></a></div>
+							</dd>
+						</dl>
+					</li>
+					<li class="result_item">
+						<h2><img src="img/dot01.png"><span>教育培训</span></h2>
+						<dl class="result_item_wrap">
+							<dt><img src="img/app03.png"></dt>
+							<dd>
+								<h3><a href="#">安测健康——和医院说再见</a></h3>
+								<h4>2015-06-03</h4>
+								<p>安测健康APP是一款集健康检测，健康查询，智能 交互等功能于一体的健康交互终端。它与配套的医疗设备如血糖仪，血压计等多种传感器进行蓝牙通讯，能准确的采集体征信息，支持手动输入数据，并将测试结果保存到AnyCheck云服务平台，与云服务健康管理平台 配套使用，可供查询健康近况和历史记录，测量结果以图表、曲线显示，让您一目了然。具备人性化的智能交互，通过健康问答、健康建议及时为您解除疑惑和提供建议。强大的医学服务团队作支撑，设计个性化健康通讯功能，可随时随地与健康医生进 行电话咨询，健康常识功能可以让您学到更多专业的健康知识，安测健康帮助您健康生活，远离医院。</p>
+								<div class="btn_wrap"><a class="btn01" href="#"><span>iOS版下载</span></a><a class="btn01" href="#"><span>Android版下载</span></a></div>
+							</dd>
+						</dl>
+					</li>
+					<li class="result_item">
+						<h2><img src="img/dot01.png"><span>教育培训</span></h2>
+						<dl class="result_item_wrap">
+							<dd>
+								<h3><a href="#">2015年度龙岗区高校毕业生创业资助拟资助项目名单</a></h3>
+								<h4>2015-06-03</h4>
+								<p>为加大政府对高校毕业生创业扶持力度，营造生态创业就业环境，龙岗区政府经过监督评审，对信息完善、符合资助管理条例的相关毕业生，进行一定的创业补助，现将拟资助名单作如下公示，欢迎广大网民予以监督。为加大政府对高校毕业生创业扶持力度，营造生态创业就业环境，龙岗区政府经过监督评审，对信息完善、符合资助管理条例的相关毕业生，进行一定的创业补助，现将拟资助名单作如下公示，欢迎广大网民予以监督。</p>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+				<div class="page">
+					<a class="phonest" href="javascript:;">首页</a>
+					<a href="javascript:;">上一页</a>
+					<span class="phonest">第1/10页</span>
+					<a href="javascript:;">下一页</a>
+					<a class="phonest" href="javascript:;">尾页</a>
+					<span class="phonest">跳到第</span>
+					<input class="page_input phonest" type="text">
+					<span  class="phonest">页</span>
+					<input class="page_go phonest" type="button" value="GO">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div id="footer">
+		<div class="layoutMid">
+			<div class="copy_right clear">
+				<dl class="footer_list">
+					<dt>开放平台</dt>
+					<dd><a class="linkify" href="#">关于我们</a></dd>
+					<dd><a class="linkify" href="#">数据导航</a></dd>
+					<dd><a class="linkify" href="#">使用协议</a></dd>
+					<dd><a class="linkify" href="#">网站申明</a></dd>
+				</dl>
+				<dl class="footer_list">
+					<dt>合作单位</dt>
+					<dd><a class="linkify" href="#">经济促进局</a></dd>
+					<dd><a class="linkify" href="#">企业服务中心</a></dd>
+					<dd><a class="linkify" href="#">龙岗区社工委</a></dd>
+					<dd><a class="linkify" href="#">信息化管理办公室</a></dd>
+				</dl>
+				<dl class="footer_list">
+					<dt>友情链接</dt>
+					<dd><a class="linkify" href="#">龙岗民生网</a></dd>
+					<dd><a class="linkify" href="#">龙岗诚信网</a></dd>
+					<dd><a class="linkify" href="#">深圳之窗</a></dd>
+					<dd><a class="linkify" href="#">区委宣传部</a></dd>
+				</dl>
+				<div class="about">
+					<img src="img/logo_footer.png">
+					<p>
+						<a class="linkify" style="margin-left:0;" href="#">联系我们
+						</a>|<a class="linkify" href="#">免责声明
+						</a>|<a class="linkify" href="#">咨询建议
+						</a>|<a class="linkify" href="#">网站地图</a>
+					</p>
+					<p>版权所有：深州市龙岗区政府</p>
+					<p>技术支持：深州市永兴元科技有限公司</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
